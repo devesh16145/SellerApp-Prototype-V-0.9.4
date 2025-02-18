@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom styles here */
+.container {
+  @apply max-w-4xl;
+}
+
+@keyframes rotateClockMinute {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-clock-minute {
+  animation: rotateClockMinute 2s linear infinite;
+  transform-origin: center; /* Ensure rotation is around the center */
+}
